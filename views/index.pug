@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+
+  body
+    h1 FCC File Metadeta MicroService
+    p Submit a file to view it's filesize
+    form(method='POST' action='/file-size' enctype="multipart/form-data")
+        input(type='file', name='userFile')
+        button(type='submit') Submit
